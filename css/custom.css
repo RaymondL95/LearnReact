@@ -1,0 +1,9 @@
+body{
+    background-color: black;
+}
+.jumbotron{
+    background-color:maroon;
+}
+.jumbotron p{
+    color:white;
+}

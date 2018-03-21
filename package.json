@@ -2,13 +2,26 @@
   "name": "raymondl95.github.io",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://raymondl95.github.io/public/index.html",
+  "homepage": "https://raymondl95.github.io/",
   "dependencies": {
     "gh-pages": "^1.1.0",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
     "react-scripts": "1.1.1"
   },
+  "gh-pages-deploy": {
+    "staticpath": "dist",
+    "cname": "nope.org",
+    "prep": [
+      "build-sass",
+      "optimize-img"
+    ],
+    "post": [
+      "clean-source"
+    ],
+    "noprompt": false
+  },
+ 
   "scripts": {
     "predeploy": "npm run build",
     "deploy": "gh-pages-deploy",
